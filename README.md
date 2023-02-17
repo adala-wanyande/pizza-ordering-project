@@ -1,10 +1,33 @@
-# Getting Started with Create React App
+# Pizza Ordering Project - Rose's Gourmet Pizza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## A Project Undertaken By Group 2 of SDF-PT01FI Phase 2 Moringa School
 
-## Available Scripts
+The members of the team are:
+- Benard Adala Wanyande (Scrum Master)
+- Roselyne Lutomia
+- Faith Mitei
+- Teddy Mbugua
 
-In the project directory, you can run:
+## Description of the Project
+
+This project is the group's attempt to implement fundamental React concepts learnt during the current phase of learning in class like components, props and state management. Other concepts like utilizing API data in React and client-side routing are also implemented within this project.
+
+The React app is a pizza restaurant website that allows users a user to browse through the home page, about us page and contact us page to learn more about the restaurant. The website also offers a menu page where users can select from a variety of delicious pizzas and add them to a virtual cart. Once the user has their desired menu items to the cart they are able to make an order in preparation for a hypothetical delivery.
+
+All this is done within a single page application, developed from scratch by team!
+
+## Link to the Live Site
+
+This project is still in development but upon submission, we will update the `README.md` with the link to the website.
+
+## Project Set Up Instructions (If you want to run the app on your machine)
+
+First, fork the repository using your Github account.
+
+Once you have forked the repository, you can clone the code directly onto your local machine using the `git clone` command.
+
+
+On your machine in the project directory, you can run:
 
 ### `npm start`
 
@@ -39,32 +62,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Copyright and License Information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pizza Ordering Project
+Copyright © 2023 Benard Wanyande
