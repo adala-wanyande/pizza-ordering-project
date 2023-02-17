@@ -12,7 +12,7 @@ The members of the team are:
 
 This project is the group's attempt to implement fundamental React concepts learnt during the current phase of learning in class like components, props and state management. Other concepts like utilizing API data in React and client-side routing are also implemented within this project.
 
-The React app is a pizza restaurant website that allows users a user to browse through the home page, about us page and contact us page to learn more about the restaurant. The website also offers a menu page where users can select from a variety of delicious pizzas and add them to a virtual cart. Once the user has their desired menu items to the cart they are able to make an order in preparation for a hypothetical delivery.
+The React app is a pizza restaurant website that allows a user to browse through the home, about us, and contact us pages to learn more about the restaurant. The website also offers a menu page where users can select from a variety of delicious pizzas and add them to a virtual cart. Once the user has added their desired menu items to the cart they are able to make an order in preparation for a hypothetical delivery.
 
 All this is done within a single page application, developed from scratch by team!
 
@@ -26,8 +26,7 @@ First, fork the repository using your Github account.
 
 Once you have forked the repository, you can clone the code directly onto your local machine using the `git clone` command.
 
-
-On your machine in the project directory, you can run:
+On your machine, in the project directory, you can run:
 
 ### `npm start`
 
