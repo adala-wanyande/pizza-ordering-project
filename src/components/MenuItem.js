@@ -12,16 +12,18 @@ const menuItemProp = {
 
 const MenuItem = ({menuItem = menuItemProp}) => {
   return (
-    <Card style={{ width: '18rem' }} key={menuItem.id}>
+    <div>
+    <Card style={{ width: '18rem', margin: '20px', height: '350px' }} key={menuItem.id}>
       <Card.Img variant="top" width="200" height="200" src={require(`../images/${menuItem.image}`)} />
       <Card.Body>
         <Card.Title>{menuItem.name}</Card.Title>
-        <Card.Text>
+        <Card.Text style={{ height: '40px' }}>
           {menuItem.description}
         </Card.Text>
-        <Badge bg="success">{menuItem.price}</Badge>
+        <Badge bg="secondary">Ksh {menuItem.price}</Badge>
       </Card.Body>
     </Card>
+    </div>
   )
 }
 
