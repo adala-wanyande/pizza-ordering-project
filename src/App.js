@@ -1,21 +1,22 @@
-import logo from './logo.svg';
-import {Button, Card} from 'react-bootstrap';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from "react-router-dom"
+import Home from "./components/Home"
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Menu from "./components/Menu"
+import Order from "./components/Order"
 
 function App() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>React Bootstrap Added</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  );
+    <div className="App">
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="about" element={ <About/> } />
+        <Route path="contact" element={ <Contact/> } />
+        <Route path="menu" element={ <Menu/> } />
+        <Route path="order" element={ <Order/> } />
+      </Routes>
+    </div>
+  )
 }
 
-export default App;
+export default App
