@@ -29,3 +29,12 @@ code {
   margin-right: 40px;
 }
 
+.instructions {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}

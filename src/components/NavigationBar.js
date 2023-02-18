@@ -28,7 +28,7 @@ const NavigationBar = ({active = activeProp}) => {
             </NavLink>
           </Nav>
         </Container>
-        <Nav.Link className="order-button p-2 rounded" href="">Order Online</Nav.Link>
+        <NavLink className="order-button p-2 rounded" style={{ color: 'black', textDecoration: 'inherit'}} to="/order">Order Online</NavLink>
       </Navbar>
   )
   }
@@ -53,7 +53,7 @@ const NavigationBar = ({active = activeProp}) => {
             </NavLink>
           </Nav>
         </Container>
-        <Nav.Link className="order-button p-2 rounded" href="">Order Online</Nav.Link>
+        <NavLink className="order-button p-2 rounded" style={{ color: 'black', textDecoration: 'inherit'}} to="/order">Order Online</NavLink>
       </Navbar>
   )
   }
@@ -78,7 +78,7 @@ const NavigationBar = ({active = activeProp}) => {
               </NavLink>
             </Nav>
           </Container>
-          <Nav.Link className="order-button p-2 rounded" href="">Order Online</Nav.Link>
+          <NavLink className="order-button p-2 rounded" style={{ color: 'black', textDecoration: 'inherit'}} to="/order">Order Online</NavLink>
         </Navbar>
       )
   }
@@ -103,7 +103,7 @@ const NavigationBar = ({active = activeProp}) => {
             </NavLink>
           </Nav>
         </Container>
-        <Nav.Link className="order-button p-2 rounded" href="">Order Online</Nav.Link>
+        <NavLink className="order-button p-2 rounded" style={{ color: 'black', textDecoration: 'inherit'}} to="/order">Order Online</NavLink>
       </Navbar>
     )
   }
