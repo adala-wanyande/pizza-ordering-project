@@ -5,56 +5,56 @@
             "name": "Hawaiian",
             "description": "Macon - Pineapple",
             "price": 1200,
-            "image": "./src/images/hawaiian.jpg"
+            "image": "hawaiian.jpg"
         },
         {
             "id": 2,
             "name": "Boewors",
             "description": "100% Beef Mince - Fresh Tomato - Fresh Onion",
             "price": 1205,
-            "image": "./src/images/boewors.jpg"
+            "image": "boewors.jpg"
         },
         {
             "id": 3,
             "name": "BBQ Steak",
             "description": "Marinated BBQ Steak",
             "price": 1210,
-            "image": "./src/images/bbq-steak.jpg"
+            "image": "bbq-steak.jpg"
         },
         {
             "id": 4,
             "name": "Regina",
             "description": "Sandwich Beef - Mushroom",
             "price": 1200,
-            "image": "./src/images/regina.jpg"
+            "image": "regina.jpg"
         },
         {
             "id": 5,
             "name": "Peri-Peri Chicken",
             "description": "Spicy Peri-Peri Chicken",
             "price": 1100,
-            "image": "./src/images/peri-peri-chicken.jpg"
+            "image": "peri-peri-chicken.jpg"
         },
         {
             "id": 6,
             "name": "Chicken Mushroom",
             "description": "Succulent Chicken - Mushroom - Creamy Mayo",
             "price": 1200,
-            "image": "./src/images/chicken-mushroom.jpg"
+            "image": "chicken-mushroom.jpg"
         },
         {
             "id": 7,
             "name": "Chicken Tikka",
             "description": "Marinated Tikka Chicken - Green Pepper - Onions",
             "price": 1200,
-            "image": "./src/images/chicken-tikka.jpg"
+            "image": "chicken-tikka.jpg"
         },
         {
             "id": 8,
             "name": "Veg Tikka",
             "description": "Sweet Corn - Red & Green Pepper - Mushroom - Onion - Jalapenos - Tikka Sauce",
             "price": 1200,
-            "image": "./src/images/veg-tikka.jpg"
+            "image": "veg-tikka.jpg"
         }
     ],
     "contact-us-messages": [
