@@ -16,6 +16,20 @@ The React app is a pizza restaurant website that allows a user to browse through
 
 All this is done within a single page application, developed from scratch by team!
 
+## Component Hierarchy 
+```txt
+└── App
+    ├── NavigationBar
+    ├── Home
+    ├── About
+    ├── Contact
+    ├── Menu
+    │    └── MenuItems
+    │         └── MenuItem
+    └── Order
+         └──OrderSuccess
+```
+
 ## Link to the Live Site
 
 This project is still in development but upon submission, we will update the `README.md` with the link to the website.
