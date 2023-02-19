@@ -14,7 +14,7 @@ This project is the group's attempt to implement fundamental React concepts lear
 
 The React app is a pizza restaurant website that allows a user to browse through the home, about us, and contact us pages to learn more about the restaurant. The website also offers a menu page where users can select from a variety of delicious pizzas and add them to a virtual cart. Once the user has added their desired menu items to the cart they are able to make an order in preparation for a hypothetical delivery.
 
-All this is done within a single page application, developed from scratch by team!
+All this is done within a single page application, developed from scratch by the team!
 
 ## Component Hierarchy 
 ```txt
