@@ -32,7 +32,7 @@ On your machine, in the project directory, you can run:
 
 To set up the database run `json-server db.json --watch p -8000` to serve the json database on port 8000 of your local machine. This will allow you to access dynamic content from the database.
 
-Open [http://localhost:8000] to view the database in your browser.
+Open [http://localhost:8000](http://localhost:8000) to view the database in your browser.
 
 
 ### `npm start`
