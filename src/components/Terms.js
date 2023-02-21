@@ -1,7 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 import "./Term.css"
 function Terms() {
   return (
+    <>
+    <NavigationBar active="Term"></NavigationBar>
     <div>
       <h2 className='terms'>TERMS AND CONDITIONS</h2>
       <div className="conditions">
@@ -13,6 +16,8 @@ function Terms() {
 </div>
       
     </div>
+    </>
+    
   )
 }
 
