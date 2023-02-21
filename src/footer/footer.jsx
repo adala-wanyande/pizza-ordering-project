@@ -1,5 +1,11 @@
 import React from "react";
 import './footer.css';
+import fb from '../assets/facebook.png';
+import twitter from '../assets/twitter.png';
+import linkedin from '../assets/linkedin.png';
+import insta from '../assets/instagram.png';
+import whatsapp from '../assets/whatsapp.png';
+import youtube from '../assets/youtube.png';
 
 const Footer =()=>{
     return(
@@ -57,20 +63,42 @@ const Footer =()=>{
                         <h4>Find us on </h4>
                         <div className="socialmedia">
                             <p>
-                                <img src="fb" alt="" />
+                                <img src={fb} alt="" />
                             </p>
                             <p>
-                                <img src="twitter" alt="" />
+                                <img src={twitter} alt="" />
                             </p>
                             <p>
-                                <img src="linkedin" alt="" />
+                                <img src={linkedin} alt="" />
                             </p>
                             <p>
-                                <img src="insta" alt="" />
+                                <img src={insta} alt="" />
+                            </p>
+                            <p>
+                                <img src={whatsapp} alt="" />
+                            </p>
+                            <p>
+                                <img src={youtube} alt="" />
                             </p>
                         </div>
                     </div>
 
+                </div>
+
+                <hr></hr>
+
+                <div className="sb_footer-below">
+                    <div className="sb_footer-copyright">
+                        <p>
+                            @{new Date().getFullYear()} CodeInn. All right reserved.
+                        </p>
+                    </div>
+                    <div className="sb_footer-below-links">
+                        <a href="terms"> <div><p>Terms &Conditions</p></div></a>
+                        <a href="terms"> <div><p>Privacy</p></div></a>
+                        <a href="terms"> <div><p>Security</p></div></a>
+                        <a href="terms"> <div><p>Cookie Declaration</p></div></a>
+                    </div>
                 </div>
 
             </div>
