@@ -33,8 +33,15 @@ a{
     display:flex;
     flex-direction: row;
 }
-.socialmedia img{
+.socialmedia {
     width:80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 15px;
+    max-width: 600px;
+    flex-direction: row;
+    inline-size: 40px;
+    margin: 1rem 2rem 3rem 4rem;
 }
 .sb_footer-links_div h4{
     font-size: 14px;

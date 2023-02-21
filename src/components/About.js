@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationBar from './NavigationBar'
 import './About.css';
+import Footer from "../footer/footer";
 
 
 const About = () => {
@@ -60,6 +61,9 @@ width="560"
                    allowfullscreen></iframe>
                 </div>
             </div>
+    </div>
+    <div>
+      <Footer/>
     </div>
     </>
   )
