@@ -63,22 +63,30 @@ const Footer =()=>{
                         <h4>Find us on </h4>
                         <div className="socialmedia">
                             <p>
-                                <img src={fb} alt=""  height={60} width={1000}  />
+                            <a href="https://www.instagram.com/pizzainn_ke/">
+                                <img src={insta} alt=""  height={60} width={1000}  /> 
+                                </a>
                             </p>
-                            <p>
+                            <p><a href="https://www.instagram.com/pizzainn_ke/">
                                 <img src={twitter} alt=""  height={60} width={1000}/>
+                                </a>
                             </p>
-                            <p>
+                            <p><a href="https://www.linkedin.com/company/pizza-inn">
                                 <img src={linkedin} alt="" height={60} width={1000}/>
+                                </a>
+
                             </p>
-                            <p>
-                                <img src={insta} alt="" height={60} width={1000}/>
+                            <p><a href="https://en-gb.facebook.com/PizzaInnKE/">
+                                <img src={fb} alt="" height={60} width={1000}/>
+                                </a>
                             </p>
-                            <p>
+                            <p><a href="https://api.whatsapp.com/send/?phone=254711653717&text=Reach+us+on+whatsApp&type=phone_number&app_absent=0">
                                 <img src={whatsapp} alt="" height={60} width={1000}/>
+                                </a>
                             </p>
-                            <p>
+                            <p><a href="https://www.youtube.com/watch?v=kkKnMs2DyOE">
                                 <img src={youtube} alt="" height={60} width={1000}/>
+                                </a>
                             </p>
                         </div>
                     </div>
