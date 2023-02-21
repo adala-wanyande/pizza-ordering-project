@@ -10,9 +10,9 @@ import youtube from '../assets/youtube.png';
 const Footer =()=>{
     return(
         <div className="footer">
-            <div className="sb__footer section_padding">
+            <div className="sb__footer section__padding">
                 <div className="sb__footer-links">
-                    <div className="sb__footer-links_div">
+                    <div className="sb__footer-links-div">
                         <h4>For Business</h4>
                         <a href="/employer">
                             <p>Employer</p>
@@ -63,22 +63,22 @@ const Footer =()=>{
                         <h4>Find us on </h4>
                         <div className="socialmedia">
                             <p>
-                                <img src={fb} alt=""  height={60} width={60}  />
+                                <img src={fb} alt=""  height={60} width={1000}  />
                             </p>
                             <p>
-                                <img src={twitter} alt=""  height={60} width={60}/>
+                                <img src={twitter} alt=""  height={60} width={1000}/>
                             </p>
                             <p>
-                                <img src={linkedin} alt="" height={60} width={60}/>
+                                <img src={linkedin} alt="" height={60} width={1000}/>
                             </p>
                             <p>
-                                <img src={insta} alt="" height={60} width={60}/>
+                                <img src={insta} alt="" height={60} width={1000}/>
                             </p>
                             <p>
-                                <img src={whatsapp} alt="" height={60} width={60}/>
+                                <img src={whatsapp} alt="" height={60} width={1000}/>
                             </p>
                             <p>
-                                <img src={youtube} alt="" height={60} width={60}/>
+                                <img src={youtube} alt="" height={60} width={1000}/>
                             </p>
                         </div>
                     </div>

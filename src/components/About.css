@@ -3,8 +3,9 @@
     background-color: rgb(225, 148, 225);
 }
 .videos{
-    padding: 50px 50px 50px 50px;
+    
     cursor: pointer;
+    width: 90%;
 
 }
 .image2{
