@@ -1,0 +1,14 @@
+.About{
+    padding: 50px 50px 50px 50px;
+    background-color: rgb(225, 148, 225);
+}
+.videos{
+    padding: 50px 50px 50px 50px;
+    cursor: pointer;
+
+}
+.image2{
+    align-items: right;
+    cursor: pointer;
+
+}

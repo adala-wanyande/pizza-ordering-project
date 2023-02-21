@@ -1,10 +1,12 @@
 import React from "react";
 import NavigationBar from './NavigationBar'
+import './About.css';
+
 
 const About = () => {
   return (
     <>
-    <NavigationBar active="Contact"></NavigationBar>
+    <NavigationBar active="About"></NavigationBar>
     <div className="About ">
  <iframe className='map'
              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8474606867426!2d36.82201841483971!3d-1.2640029990780584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f171ff7af4bdd%3A0x9dbde3a5d6365341!2sPizza%20Inn!5e0!3m2!1sen!2ske!4v1676895300677!5m2!1sen!2ske" 
@@ -42,7 +44,8 @@ const About = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                    allowfullscreen></iframe>
 
-<iframe width="560"
+<iframe className="image2"
+width="560"
  height="315" 
  src="https://www.youtube.com/embed/ebudbL38UPA" 
  title="Pizza inn and Chicken inn , Mega Festive Feast." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -59,7 +62,7 @@ const About = () => {
             </div>
     </div>
     </>
-  );
+  )
 }
 
-export default About;
+export default About
