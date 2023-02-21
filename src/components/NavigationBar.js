@@ -26,6 +26,9 @@ const NavigationBar = ({active = activeProp}) => {
             <NavLink className="mx-2" style={{ color: 'white', textDecoration: 'inherit' }} to="/contact">
               Contact Us
             </NavLink>
+            <NavLink className="mx-2" style={{ color: 'white', textDecoration: 'inherit' }} to="/terms">
+              Terms and Conditions
+            </NavLink>
             <NavLink className="mx-2" style={{ color: 'white', textDecoration: 'inherit' }} to="/menu">
               Our Menu
             </NavLink>

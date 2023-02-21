@@ -5,6 +5,7 @@ import Menu from "./components/Menu"
 import Order from "./components/Order"
 import NavigationBar from "./components/NavigationBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Terms from "./components/Terms"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="about" element={ <About/> } />
         <Route path="contact" element={ <Contact/> } />
         <Route path="menu" element={ <Menu/> } />
+        <Route path="terms" element={ <Terms/> } />
         <Route path="order" element={ <Order/> } />
       </Routes>
     </div>
