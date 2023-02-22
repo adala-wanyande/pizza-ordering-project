@@ -37,7 +37,7 @@ const Contact = () => {
         message: messageContent
     }
     console.log(formData)
-    fetch("http://localhost:8000/contact-us-messages", {
+    fetch("https://pizza-ordering-project-backend.herokuapp.com/contact-us-messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

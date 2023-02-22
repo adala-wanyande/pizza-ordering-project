@@ -8,7 +8,7 @@ const Menu = () => {
   const [menuItems, setMenuItems] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8000/pizzas')
+    fetch('https://pizza-ordering-project-backend.herokuapp.com/pizzas')
     .then((r) => r.json())
     .then((pizzas) => {
       setMenuItems((menuItems) => pizzas)
