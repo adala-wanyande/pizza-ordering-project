@@ -4,7 +4,7 @@ import "../css/Term.css"
 function Terms() {
   return (
     <>
-    <NavigationBar active="Term"></NavigationBar>
+    <NavigationBar active="Terms"></NavigationBar>
     <div>
       <h2 className='terms'>TERMS AND CONDITIONS</h2>
       <div className="conditions">

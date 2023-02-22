@@ -3,7 +3,7 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Menu from "./components/Menu"
 import Order from "./components/Order"
-import NavigationBar from "./components/NavigationBar"
+import Home from "./components/Home"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Terms from "./components/Terms"
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={ <NavigationBar/> } />
+        <Route path="/" element={ <Home/> } />
         <Route path="about" element={ <About/> } />
         <Route path="contact" element={ <Contact/> } />
         <Route path="menu" element={ <Menu/> } />
