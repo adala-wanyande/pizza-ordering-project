@@ -6,7 +6,7 @@ import Order from "./components/Order"
 import Home from "./components/Home"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Terms from "./components/Terms"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
