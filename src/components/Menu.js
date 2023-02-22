@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import NavigationBar from './NavigationBar'
+import {Form} from 'react-bootstrap'
 import MenuItems from './MenuItems'
 
 
@@ -19,9 +20,9 @@ const Menu = () => {
       <NavigationBar active='Menu'></NavigationBar>
       <h1 className='mt-4 text-center'>Our Menu</h1>
       <div className='instructions'>
-          <p className="text-muted">
+          <Form.Text className="text-muted">
             All our pizzas are made with love and prepared with fresh ingredients sourced from local Kenyan businesses everyday.
-          </p>
+          </Form.Text>
         </div>
       <MenuItems menuItems={menuItems}></MenuItems>
     </>

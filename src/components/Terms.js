@@ -1,6 +1,6 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
-import "./Term.css"
+import "../css/Term.css"
 function Terms() {
   return (
     <>

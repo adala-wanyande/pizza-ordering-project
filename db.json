@@ -78,6 +78,13 @@
       "subject": "Amazing Pizza!",
       "message": "I really enjoyed the pizza! Keep up the good work Rose's Gourmet Pizza!",
       "id": 3
+    },
+    {
+      "name": "Teddy Mbugua",
+      "email": "teddymbugua@moringaschool.com",
+      "subject": "I hated the pizza!",
+      "message": "Something was wrong with my pizza. Never ordering from here again!",
+      "id": 4
     }
   ],
   "orders": [

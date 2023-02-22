@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationBar from './NavigationBar'
-import './About.css';
-import Footer from "../footer/footer";
+import '../css/About.css';
+import Footer from "./Footer";
 
 
 const About = () => {
