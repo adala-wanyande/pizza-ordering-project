@@ -14,11 +14,6 @@ function Home() {
           {gallery.map((image, index) => {
             console.log("image", image);
             return <img key={index} src={image.url} alt={image.alt} />;
-            // <span className="slides" key={index}>
-
-            //   <h2 className="slide-title">{image.title}</h2>
-            //   <h5 className="slide-text">{image.description}</h5>
-            // </span>
           })}
         </CarouselContainer>
         <div className="Call_to_action">
@@ -44,7 +39,6 @@ function Home() {
             justifyContent: "space-",
           }}
         >
-          {" "}
           <p>For same delivery order by 11 am</p>
           <Button variant="Primary"> Order Now!</Button>
         </span>

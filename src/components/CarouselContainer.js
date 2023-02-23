@@ -19,26 +19,24 @@ const CarouselContainer = ({ children }) => {
     }
   }, [completeSlide]);
 
-  // const len = images.len - 1;
-
   const previousSlide = () => {
     // setActiveIndex(activeIndex < 1 ? len : activeIndex - 1);
-    setActiveIndex((val) => {
-      if (val <= 0) {
+    setActiveIndex((value) => {
+      if (value <= 0) {
         return children.length - 1;
       } else {
-        return val - 1;
+        return value - 1;
       }
     });
   };
 
   function nextSlide() {
     // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-    setActiveIndex((val) => {
-      if (val >= children.length - 1) {
+    setActiveIndex((value) => {
+      if (value >= children.length - 1) {
         return 0;
       } else {
-        return val + 1;
+        return value + 1;
       }
     });
   }
@@ -56,6 +54,7 @@ const CarouselContainer = ({ children }) => {
   };
 
   return (
+    // child map
     <div
       className="carousel-wrapper "
       onMouseEnter={stopSlider}
@@ -91,12 +90,11 @@ const CarouselContainer = ({ children }) => {
           );
         })}
       </div>
-      <span></span>
+      {/* Button navigations */}
       <span>
         <button className="prevBtn" onClick={previousSlide}>
           &lt;
         </button>
-
         <button className="nextBtn" onClick={nextSlide}>
           &gt;
         </button>
