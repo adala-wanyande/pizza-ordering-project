@@ -6,6 +6,8 @@ This project is an attempt to implement fundamental React concepts learnt during
 
 The React app is a pizza restaurant website that allows a user to browse through the home, about us, and contact us pages to learn more about the restaurant. The website also offers a menu page where users can view a variety of delicious pizzas. Once the user has viewed the menu, they are able to make an order in preparation for a hypothetical delivery.
 
+## Deployed Site and Technology Stack
+
 The deployed site can be found [here](https://rosesgourmetpizza.netlify.app/)
 
 The React app also makes network requests from an external server hosted using Heroku. The backend JSON server repository can be found [here](https://github.com/benard-dev/pizza-ordering-project-backend-json-server) and the deployed database can be found [here]("https://pizza-ordering-project-backend.herokuapp.com/orders"). 
@@ -59,7 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes. You may also see any lint errors in the console.
 
-### Authors
+## Authors
 * [Benard Wanyande](https://github.com/benard-dev)
-### License
+## License
 This project is available for use under the [MIT License](https://opensource.org/license/mit/).
