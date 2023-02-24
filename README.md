@@ -21,18 +21,22 @@ All this is done within a single page application, developed from scratch by the
 └── App
     ├── NavigationBar
     ├── Home
+    |    └── CarouselContainer
     ├── About
+    |    └── Footer
     ├── Contact
+    |    └── ContactSuccess
     ├── Menu
     │    └── MenuItems
     │         └── MenuItem
     └── Order
          └──OrderSuccess
+    └── Terms
 ```
 
 ## Link to the Live Site
 
-This project is still in development but upon submission, we will update the `README.md` with the link to the website.
+The deployed site can be found [here](https://rosesgourmetpizza.netlify.app/)
 
 ## Project Set Up Instructions (If you want to run the app on your machine)
 
@@ -41,6 +45,10 @@ First, fork the repository using your Github account.
 Once you have forked the repository, you can clone the code directly onto your local machine using the `git clone` command.
 
 On your machine, in the project directory, you can run:
+
+### `npm install`
+
+This will install all of the node module dependencies needed to run the application.
 
 ### `json-server db.json --watch p -8000`
 

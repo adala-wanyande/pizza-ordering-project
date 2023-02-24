@@ -11,7 +11,6 @@ const CarouselContainer = ({ children }) => {
       setCompleteSlide(false);
       setTimeId(
         setTimeout(() => {
-          console.log("time is up!");
           nextSlide();
           setCompleteSlide(true);
         }, 10000)
@@ -61,7 +60,6 @@ const CarouselContainer = ({ children }) => {
       onMouseLeave={startSlider}
     >
       {children.map((image, index) => {
-        console.log("check me out ", image);
         return (
           <>
             <div

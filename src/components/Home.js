@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavigationBar from "./NavigationBar";
 import CarouselContainer from "./CarouselContainer";
-import gallery from "./CarouselImages";
+import gallery from "../images/CarouselImages";
 import { Card, CardGroup, CardImg } from "react-bootstrap";
 import bbqSteak from "../images/bbq-steak.jpg";
 import boewors from "../images/boewors.jpg";
@@ -23,7 +23,6 @@ function Home() {
         {/* Carousel here: */}
         <CarouselContainer>
           {gallery.map((image, index) => {
-            console.log("image", image);
             return <img key={index} src={image.url} alt={image.alt} />;
           })}
         </CarouselContainer>
