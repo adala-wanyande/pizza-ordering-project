@@ -4,7 +4,6 @@ import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Order from "./components/Order";
 import Home from "./components/Home";
-// import NavigationBar from "./components/NavigationBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
