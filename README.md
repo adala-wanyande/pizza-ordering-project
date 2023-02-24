@@ -8,11 +8,11 @@ The React app is a pizza restaurant website that allows a user to browse through
 
 ## Deployed Site and Technology Stack
 
-The deployed site can be found [here](https://rosesgourmetpizza.netlify.app/)
+The deployed site can be found [here](https://rosesgourmetpizza.netlify.app/).
 
-The React app also makes network requests from an external server hosted using Heroku. The backend JSON server repository can be found [here](https://github.com/benard-dev/pizza-ordering-project-backend-json-server) and the deployed database can be found [here]("https://pizza-ordering-project-backend.herokuapp.com/orders")
+The React app also makes network requests from an external server hosted using Heroku. The backend JSON server repository can be found [here](https://github.com/benard-dev/pizza-ordering-project-backend-json-server) and the deployed database can be found [here](https://pizza-ordering-project-backend.herokuapp.com/orders).
 
-The wireframes (low-fidelity) used to protoype and design this project can be found [here](https://www.figma.com/file/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?node-id=0%3A1&t=ZJSXt8510jgp48oG-1) and the wireframe prototype can be found [here](https://www.figma.com/proto/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?page-id=0%3A1&node-id=1%3A2&viewport=988%2C426%2C0.44&scaling=min-zoom&starting-point-node-id=1%3A2)
+The wireframes (low-fidelity) used to protoype and design this project can be found [here](https://www.figma.com/file/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?node-id=0%3A1&t=ZJSXt8510jgp48oG-1) and the wireframe prototype can be found [here](https://www.figma.com/proto/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?page-id=0%3A1&node-id=1%3A2&viewport=988%2C426%2C0.44&scaling=min-zoom&starting-point-node-id=1%3A2).
 
 The technology stack used for this project is as follows:
 - [React](https://reactjs.org/) for the frontend development
