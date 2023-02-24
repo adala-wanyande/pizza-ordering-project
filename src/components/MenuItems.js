@@ -1,15 +1,14 @@
 import React from 'react'
-// import { CardGroup } from 'react-bootstrap'
 import MenuItem from './MenuItem'
 
 
-const MenuItems = ({menuItems}) => {
+const MenuItems = ({ menuItems }) => {
     const renderMenuItems = menuItems.map((menuItem) => {
         return <MenuItem key={menuItem.id} menuItem = {menuItem}></MenuItem>
     })
     return (
         <div className="menu-items">
-        {renderMenuItems}
+            {renderMenuItems}
         </div>
     );
 }
