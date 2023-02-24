@@ -121,6 +121,10 @@ const Order = () => {
             <option value="Boewors">Boewors</option>
             <option value="Chicken Tikka">Chicken Tikka</option>
             <option value="BBQ Chicken">BBQ Chicken</option>
+            <option value="BBQ Chicken">Regina</option>
+            <option value="BBQ Chicken">Peri-Peri Chicken</option>
+            <option value="BBQ Chicken">Chicken Mushroom</option>
+            <option value="BBQ Chicken">Veg Tikka</option>
           </select>
           <Form.Control.Feedback tooltip>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid" tooltip>
@@ -140,7 +144,9 @@ const Order = () => {
             {errors.quantity}
           </Form.Control.Feedback>
         </Form.Group>
+        <div style={{ display: "flex", justifyContent: "center"  }}>
         {renderLoadingSpinner()}
+        </div>
       </Form>
       </div> 
     </>
