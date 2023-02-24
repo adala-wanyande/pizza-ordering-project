@@ -92,12 +92,12 @@ const CarouselContainer = ({ children }) => {
       </div>
       {/* Button navigations */}
       <span>
-        <button className="prevBtn" onClick={previousSlide}>
+        <span className="prevBtn" onClick={previousSlide}>
           &lt;
-        </button>
-        <button className="nextBtn" onClick={nextSlide}>
+        </span>
+        <span className="nextBtn" onClick={nextSlide}>
           &gt;
-        </button>
+        </span>
       </span>
     </div>
   );

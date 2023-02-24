@@ -24,11 +24,18 @@ function Home() {
         <CarouselContainer>
           {gallery.map((image, index) => {
             console.log("image", image);
-            return <img key={index} src={image.url} alt={image.alt} />;
+            return (
+              <img
+                key={index}
+                src={image.url}
+                alt={image.alt}
+                style={{ float: "center" }}
+              />
+            );
           })}
         </CarouselContainer>
         <div className="about">
-          <p>
+          <p style={{ justifyContent: "center" }}>
             Our homemade pizza dough is produced in-house daily and is another
             reason why the pizza at Rose's Gourmet Pizza is simply the best! The
             Twisty bread, the signature Wingz and the delicious Double Meal are

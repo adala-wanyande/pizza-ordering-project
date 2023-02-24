@@ -5,56 +5,64 @@
       "name": "Hawaiian",
       "description": "Macon - Pineapple",
       "price": 1200,
-      "image": "hawaiian.jpg"
+      "image": "hawaiian.jpg",
+      "likes": 0
     },
     {
       "id": 2,
       "name": "Boewors",
       "description": "100% Beef Mince - Fresh Tomato - Fresh Onion",
       "price": 1205,
-      "image": "boewors.jpg"
+      "image": "boewors.jpg",
+      "likes": 0
     },
     {
       "id": 3,
       "name": "BBQ Steak",
       "description": "Marinated BBQ Steak",
       "price": 1210,
-      "image": "bbq-steak.jpg"
+      "image": "bbq-steak.jpg",
+      "likes": 0
     },
     {
       "id": 4,
       "name": "Regina",
       "description": "Sandwich Beef - Mushroom",
       "price": 1200,
-      "image": "regina.jpg"
+      "image": "regina.jpg",
+      "likes": 0
     },
     {
       "id": 5,
       "name": "Peri-Peri Chicken",
       "description": "Spicy Peri-Peri Chicken",
       "price": 1100,
-      "image": "peri-peri-chicken.jpg"
+      "image": "peri-peri-chicken.jpg",
+      "likes": 0
     },
     {
       "id": 6,
       "name": "Chicken Mushroom",
       "description": "Succulent Chicken - Mushroom - Creamy Mayo",
       "price": 1200,
-      "image": "chicken-mushroom.jpg"
+      "image": "chicken-mushroom.jpg",
+      "likes": 0
     },
     {
       "id": 7,
       "name": "Chicken Tikka",
       "description": "Marinated Tikka Chicken - Green Pepper - Onions",
       "price": 1200,
-      "image": "chicken-tikka.jpg"
+      "image": "chicken-tikka.jpg",
+      "likes": 0
     },
     {
       "id": 8,
       "name": "Veg Tikka",
       "description": "Sweet Corn - Red & Green Pepper - Mushroom - Onion - Jalapenos - Tikka Sauce",
       "price": 1200,
-      "image": "veg-tikka.jpg"
+      "image": "veg-tikka.jpg",
+      "likes": 0
     }
   ],
   "contact-us-messages": [
