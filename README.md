@@ -51,7 +51,7 @@ On your machine, in the project directory, you can run:
 
 This will install all of the node module dependencies needed to run the application. 
 
-The terminal may prompt you to run `npm audit fix`. I recommend you run `npm audit fix --force` to get read of any errors.
+The terminal may prompt you to run `npm audit fix`. I recommend you run `npm audit fix --force` to get rid of any errors.
 
 ### `npm start`
 
