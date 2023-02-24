@@ -20,7 +20,7 @@ function App() {
         <Route path="order" element={ <Order/> } />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
