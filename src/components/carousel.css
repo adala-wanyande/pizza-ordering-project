@@ -117,12 +117,8 @@
 .card:hover {
   transform: scale(1.1);
 }
-.call_to_action > p {
+.call_to_action {
   display: block;
   margin-top: 20px;
-  align-items: center;
-}
-.p {
-  font-size: 15px;
   align-items: center;
 }

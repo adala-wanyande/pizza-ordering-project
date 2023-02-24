@@ -142,11 +142,37 @@ function Home() {
           </Card>
         </CardGroup>
       </div>
-      <div className="call_to_action">
-        <p>For same delivery order by 11 am</p>
-        <Link to="/order">
-          <button> Order Now!</button>
-        </Link>
+
+      <div className="about">
+        <span style={{ fontWeight: "bold", fontSize: "20px", margin: "20px" }}>
+          Make order for same day delivery !
+        </span>
+        <span
+          style={{
+            fontWeight: "medium ",
+            fontStyle: "italic",
+            fontSize: "20px",
+            margin: "20px",
+          }}
+        >
+          Working hours (8AM - 11PM )
+        </span>
+        <span>
+          <Link to="/order">
+            <button
+              style={{
+                border: "none ",
+                backgroundColor: "black",
+                color: "white",
+                padding: "10px",
+                marginTop: "10px",
+                left: "10px",
+              }}
+            >
+              Order Now!
+            </button>
+          </Link>
+        </span>
       </div>
     </div>
   );
