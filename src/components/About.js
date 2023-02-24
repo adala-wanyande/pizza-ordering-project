@@ -1,7 +1,10 @@
 import React from "react";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from './NavigationBar'
+import '../css/About.css';
+import Footer from "./Footer";
 
-function About() {
+
+const About = () => {
   return (
     <>
       <NavigationBar active="About"></NavigationBar>
@@ -26,8 +29,11 @@ function About() {
           </div>
         </div>
       </div>
+      <div>
+        <Footer/>
+      </div>
     </>
   );
 }
 
-export default About;
+export default About

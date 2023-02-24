@@ -38,3 +38,7 @@ code {
   display: flex;
   justify-content: center;
 }
+
+button:disabled {
+  opacity: 0.35;
+}
