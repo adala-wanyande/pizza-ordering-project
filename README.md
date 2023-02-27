@@ -1,20 +1,28 @@
-# Pizza Ordering Project - Rose's Gourmet Pizza
-
-## A Project Undertaken By Group 2 of SDF-PT01FI Phase 2 Moringa School
-
-The members of the team are:
-- Benard Adala Wanyande (Scrum Master)
-- Roselyne Lutomia
-- Faith Mitei
-- Teddy Mbugua
+#  Rose's Gourmet Pizza - Pizza Ordering Project
 
 ## Description of the Project
 
-This project is the group's attempt to implement fundamental React concepts learnt during the current phase of learning in class like components, props and state management. Other concepts like utilizing API data in React and client-side routing are also implemented within this project.
+This project is an attempt to implement fundamental React concepts learnt during my current phase of learning (February 2023) like components, props and state management. Other concepts like utilizing API data in React and client-side routing are also implemented within this project.
 
-The React app is a pizza restaurant website that allows a user to browse through the home, about us, and contact us pages to learn more about the restaurant. The website also offers a menu page where users can select from a variety of delicious pizzas and add them to a virtual cart. Once the user has added their desired menu items to the cart they are able to make an order in preparation for a hypothetical delivery.
+The React app is a pizza restaurant website that allows a user to browse through the home, about us, and contact us pages to learn more about the restaurant. The website also offers a menu page where users can view a variety of delicious pizzas. Once the user has viewed the menu, they are able to make an order in preparation for a hypothetical delivery.
 
-All this is done within a single page application, developed from scratch by the team!
+## Deployed Site and Technology Stack
+
+The deployed site can be found [here](https://rosesgourmetpizza.netlify.app/).
+
+The React app also makes network requests from an external server hosted using Heroku. The backend JSON server repository can be found [here](https://github.com/benard-dev/pizza-ordering-project-backend-json-server) and the deployed database can be found [here](https://pizza-ordering-project-backend.herokuapp.com).
+
+The wireframes (low-fidelity) used to protoype and design this project can be found [here](https://www.figma.com/file/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?node-id=0%3A1&t=ZJSXt8510jgp48oG-1) and the wireframe prototype can be found [here](https://www.figma.com/proto/0f2SgNnRvx6wSCsC6zU12D/Pizza-Ordering-Project---Rose's-Gourmet-Pizza?page-id=0%3A1&node-id=1%3A2&viewport=988%2C426%2C0.44&scaling=min-zoom&starting-point-node-id=1%3A2).
+
+The technology stack used for this project is as follows:
+- [React](https://reactjs.org/) for the frontend development
+- [React Router](https://reactrouter.com/en/main) for the client side routing
+- [JSON Server](https://www.npmjs.com/package/json-server) for the dummy REST API backend 
+- [React Bootsrap](https://react-bootstrap.github.io/) for styling the React components
+- [Figma](https://www.figma.com/) for the mockups and designs
+- [Formik](https://formik.org/) for handling form validation within React
+
+All this is done within a single page application!
 
 ## Component Hierarchy 
 ```txt
@@ -23,16 +31,13 @@ All this is done within a single page application, developed from scratch by the
     ├── Home
     ├── About
     ├── Contact
+    |    └── ContactSuccess
     ├── Menu
     │    └── MenuItems
     │         └── MenuItem
     └── Order
          └──OrderSuccess
 ```
-
-## Link to the Live Site
-
-This project is still in development but upon submission, we will update the `README.md` with the link to the website.
 
 ## Project Set Up Instructions (If you want to run the app on your machine)
 
@@ -42,47 +47,21 @@ Once you have forked the repository, you can clone the code directly onto your l
 
 On your machine, in the project directory, you can run:
 
-### `json-server db.json --watch p -8000`
+### `npm install`
 
-To set up the database run `json-server db.json --watch p -8000` to serve the json database on port 8000 of your local machine. This will allow you to access dynamic content from the database.
+This will install all of the node module dependencies needed to run the application. 
 
-Open [http://localhost:8000](http://localhost:8000) to view the database in your browser.
-
+The terminal may prompt you to run `npm audit fix`. I recommend you run `npm audit fix --force` to get rid of any errors.
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes. You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Copyright and License Information
-
-Pizza Ordering Project
-Copyright © 2023 Benard Wanyande
+## Authors
+* [Benard Wanyande](https://github.com/benard-dev)
+## License
+This project is available for use under the [MIT License](https://opensource.org/license/mit/).

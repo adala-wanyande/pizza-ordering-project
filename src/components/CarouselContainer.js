@@ -20,7 +20,6 @@ const CarouselContainer = ({ children }) => {
   }, [completeSlide]);
 
   const previousSlide = () => {
-    // setActiveIndex(activeIndex < 1 ? len : activeIndex - 1);
     setActiveIndex((value) => {
       if (value <= 0) {
         return children.length - 1;
@@ -31,7 +30,6 @@ const CarouselContainer = ({ children }) => {
   };
 
   function nextSlide() {
-    // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
     setActiveIndex((value) => {
       if (value >= children.length - 1) {
         return 0;

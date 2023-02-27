@@ -1,22 +1,12 @@
 import React from 'react'
-import {Alert, Table} from 'react-bootstrap'
+import {Alert, Table, Form} from 'react-bootstrap'
 
-const orderSuccessProp = {
-  "id": 1,
-  "name": "Adala Wanyande",
-  "phoneNumber": "+254712345678",
-  "deliveryAddress": "Riara Valley Gardens, Riara Road",
-  "pizza": "Boewors",
-  "quantity": 2,
-  "price": 2500
-}
-
-const OrderSuccess = ({orderSuccess = orderSuccessProp}) => {
+const OrderSuccess = ({ orderSuccessObject }) => {
   return (
-    <div>
+    <div class="m-4">
       <Alert variant ="success">
         <Alert.Heading>Thank you for your order!</Alert.Heading>
-        <p>Hello, {orderSuccess.name}! Thank you for purchasing from our restaurant. Your order ID is: {orderSuccess.id}</p>
+        <Form.Text>Hello, {orderSuccessObject.name}! Thank you for purchasing from our restaurant. Your order ID is: {orderSuccessObject.id}</Form.Text>
         <hr></hr>
         <Alert.Heading>Order Details</Alert.Heading>
         <Table striped bordered hover>
@@ -26,21 +16,19 @@ const OrderSuccess = ({orderSuccess = orderSuccessProp}) => {
               <th>Delivery Address</th>
               <th>Pizza</th>
               <th>Quantity</th>
-              <th>Price (Ksh)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>{orderSuccess.id}</td>
-              <td>{orderSuccess.deliveryAddress}</td>
-              <td>{orderSuccess.pizza}</td>
-              <td>{orderSuccess.quantity}</td>
-              <td>{orderSuccess.quantity}</td>
+              <td>{orderSuccessObject.id}</td>
+              <td>{orderSuccessObject.deliveryAddress}</td>
+              <td>{orderSuccessObject.pizza}</td>
+              <td>{orderSuccessObject.quantity}</td>
             </tr>
           </tbody>
         </Table> 
         <hr></hr>
-        <p>We will contact you using {orderSuccess.phoneNumber} once the delivery arrives at the delivery destination.</p>
+        <Form.Text>We will contact you using {orderSuccessObject.phoneNumber} once the delivery arrives at the delivery destination.</Form.Text>
       </Alert>
     </div>
   )

@@ -1,15 +1,7 @@
 import React from 'react'
 import {Alert, Table} from 'react-bootstrap'
 
-const contactSuccessObjectProp = {
-  "id": 1,
-  "name": "Adala Wanyande",
-  "email": "awanyande@gmail.com",
-  "messageSubject": "The food was delicious!",
-  "messageContent": "I can't wait to come back to Rose's Gourmet Pizza again!"
-}
-
-const ContactSuccess = ({contactSuccessObject = contactSuccessObjectProp}) => {
+const ContactSuccess = ({ contactSuccessObject }) => {
   return (
     <div class="m-4">
       <Alert variant ="success">

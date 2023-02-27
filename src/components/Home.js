@@ -31,7 +31,7 @@ function Home() {
   }
 
   return (
-    <div className="main-home">
+    <>
       <NavigationBar active="Home"></NavigationBar>
       <div className="main-cont">
         <CarouselContainer>
@@ -99,7 +99,7 @@ function Home() {
           </Link>
         </span>
       </div>
-    </div>
+    </>
   );
 }
 
