@@ -11,6 +11,7 @@ const CarouselContainer = ({ children }) => {
       setCompleteSlide(false);
       setTimeId(
         setTimeout(() => {
+          console.log("time is up!");
           nextSlide();
           setCompleteSlide(true);
         }, 10000)
@@ -19,7 +20,6 @@ const CarouselContainer = ({ children }) => {
   }, [completeSlide]);
 
   const previousSlide = () => {
-    // setActiveIndex(activeIndex < 1 ? len : activeIndex - 1);
     setActiveIndex((value) => {
       if (value <= 0) {
         return children.length - 1;
@@ -30,7 +30,6 @@ const CarouselContainer = ({ children }) => {
   };
 
   function nextSlide() {
-    // setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
     setActiveIndex((value) => {
       if (value >= children.length - 1) {
         return 0;
@@ -60,6 +59,7 @@ const CarouselContainer = ({ children }) => {
       onMouseLeave={startSlider}
     >
       {children.map((image, index) => {
+        console.log("check me out ", image);
         return (
           <>
             <div
@@ -90,12 +90,12 @@ const CarouselContainer = ({ children }) => {
       </div>
       {/* Button navigations */}
       <span>
-        <button className="prevBtn" onClick={previousSlide}>
+        <span className="prevBtn" onClick={previousSlide}>
           &lt;
-        </button>
-        <button className="nextBtn" onClick={nextSlide}>
+        </span>
+        <span className="nextBtn" onClick={nextSlide}>
           &gt;
-        </button>
+        </span>
       </span>
     </div>
   );

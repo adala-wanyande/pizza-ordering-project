@@ -1,8 +1,7 @@
 import React from 'react'
 import {Alert, Table, Form} from 'react-bootstrap'
 
-
-const OrderSuccess = ({orderSuccessObject}) => {
+const OrderSuccess = ({ orderSuccessObject }) => {
   return (
     <div class="m-4">
       <Alert variant ="success">

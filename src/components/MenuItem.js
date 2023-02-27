@@ -1,16 +1,7 @@
 import React from 'react'
 import { Badge, Card } from 'react-bootstrap';
 
-// Dummy prop of menu item
-const menuItemProp = {
-  "id": 1,
-  "name": "Hawaiian",
-  "description": "Macon - Pineapple",
-  "price": 1200,
-  "image": "hawaiian.jpg"
-}
-
-const MenuItem = ({menuItem = menuItemProp}) => {
+const MenuItem = ({ menuItem }) => {
   return (
     <div>
     <Card style={{ width: '18rem', margin: '20px', height: '350px' }} className="text-center" key={menuItem.id}>

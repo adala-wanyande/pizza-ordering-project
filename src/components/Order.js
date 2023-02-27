@@ -12,9 +12,17 @@ import { orderSchema } from '../schemas'
 const Order = () => {
   const [successfulOrderObject, setSuccessfulOrderObject] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [validated, setValidated] = useState(false);
 
- const onSubmit  = () => {
+ const onSubmit  = (event) => {
   // event.preventDefault();
+  const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
   const formData = 
     {
       name: values.name,
@@ -50,7 +58,7 @@ const Order = () => {
     onSubmit,
   })
 
-  console.log(errors)
+  // console.log(errors)
 
   const renderLoadingSpinner = () => {
     if(isSubmitting) {
@@ -83,13 +91,13 @@ const Order = () => {
     <>
       <h1 className='mt-4 text-center'>Place An Order</h1>
       <div className='form'>
-      <Form noValidate className="mx-4" onSubmit={handleSubmit} style={{ width: '500px' }}>
+      <Form noValidate validated={validated} className="mx-4" onSubmit={handleSubmit} style={{ width: '500px' }}>
         <div className='instructions'>
           <Form.Text className="text-muted">
             All input fields must be filled in to place order succesfully.
           </Form.Text>
         </div>
-        <Form.Group className="mb-3" controlId="validationFormik01">
+        <Form.Group className="mb-3">
           <Form.Label>Your Name</Form.Label>
           <Form.Control value={values.name} id="name" onChange={handleChange} isInvalid={!!errors.name} isValid={touched.name && !errors.name} type="text" placeholder="Benard Wanyande" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -98,7 +106,7 @@ const Order = () => {
           </Form.Control.Feedback>
 
         </Form.Group>
-        <Form.Group className="mb-3" controlId="validationFormik01">
+        <Form.Group className="mb-3">
           <Form.Label>Your Phone Number</Form.Label>
           <Form.Control value={values.phoneNumber} id="phoneNumber" onChange={handleChange} isInvalid={!!errors.phoneNumber} isValid={touched.phoneNumber && !errors.phoneNumber} type="text" placeholder="+254712345678" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -106,7 +114,7 @@ const Order = () => {
             {errors.phoneNumber}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="validationFormik01">
+        <Form.Group className="mb-3">
           <Form.Label>Delivery Address</Form.Label>
           <Form.Control value={values.deliveryAddress} id="deliveryAddress" onChange={handleChange} isInvalid={!!errors.deliveryAddress} isValid={touched.deliveryAddress && !errors.deliveryAddress} type="text" placeholder="Five Star Phase 2, South C, House Number 200" />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -114,7 +122,7 @@ const Order = () => {
             {errors.deliveryAddress}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="validationFormik01">
+        <Form.Group className="mb-3">
           <Form.Label>Pizza Flavour</Form.Label>
           <select class="form-select" value={values.pizzaFlavour} id="pizzaFlavour" onChange={handleChange} isInvalid={!!errors.pizzaFlavour} isValid={!errors.pizzaFlavour} aria-label="Default select example">
             <option selected value="Hawaiian">Hawaiian</option>
@@ -131,7 +139,7 @@ const Order = () => {
             {errors.pizzaFlavour}
           </Form.Control.Feedback>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="validationFormik01">
+        <Form.Group className="mb-3">
           <Form.Label>Quantity</Form.Label>
           <select class="form-select" value={values.quantity} id="quantity" onChange={handleChange} isInvalid={!!errors.quantity} isValid={!errors.quantity} aria-label="Default select example">
             <option selected value="1">1</option>
@@ -144,7 +152,7 @@ const Order = () => {
             {errors.quantity}
           </Form.Control.Feedback>
         </Form.Group>
-        <div style={{ display: "flex", justifyContent: "center"  }}>
+        <div style={{ display: "flex", justifyContent: "center"}}>
         {renderLoadingSpinner()}
         </div>
       </Form>

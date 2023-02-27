@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: scroll;
 }
 
 code {
@@ -41,4 +42,69 @@ code {
 
 button:disabled {
   opacity: 0.35;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.frame-1 {
+  background-image: url("images/home-frame-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.see-menu-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.h1-frame-1 {
+  color: white;
+  font-size: 56px;
+  margin-bottom: 80px;
+}
+
+.h2-frame-1 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 50px;
+  padding-right: 20%
+}
+
+.about {
+  background-image: url("images/about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .frame-1 {
+    background-image: url("images/home-frame-1.jpg");
+    background-position: 70% 30%;
+    background-size: cover;
+  }
+
+  .h1-frame-1 {
+    margin-top: 40px;
+    width: 60vw;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .h2-frame-1 {
+    color: white;
+    font-size: 16px;
+    width: 60vw;
+    margin-bottom: 50px;
+  }
+
+  .about {
+    background-image: url("images/about.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }

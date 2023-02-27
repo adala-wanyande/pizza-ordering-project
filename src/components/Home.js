@@ -1,33 +1,54 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 import CarouselContainer from "./CarouselContainer";
-import gallery from "../images/CarouselImages";
-import { Card, CardGroup, CardImg } from "react-bootstrap";
-import bbqSteak from "../images/bbq-steak.jpg";
-import boewors from "../images/boewors.jpg";
-import chickenMush from "../images/chicken-mushroom.jpg";
-import tikka from "../images/veg-tikka.jpg";
-import { FcLike } from "react-icons/fc";
+import gallery from "./CarouselImages";
 import { Link } from "react-router-dom";
+import RateCardCollection from "./RateCardCollection";
 
 function Home() {
+  const [faveItems, setFaveItems] = useState([]);
   const [count, setCount] = useState(0);
 
-  function handleClick() {
-    setCount(count + 1);
+  useEffect(() => {
+    fetch("http://localhost:8000/favourites")
+      .then((response) => response.json())
+      .then((faveItems) => setFaveItems(faveItems));
+  }, []);
+
+  function handleAddLikes(id) {
+    const updateLikes = count + 1;
+
+    fetch(`http://localhost:8000/favourites/${faveItems.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateLikes),
+    })
+      .then((response) => response.json())
+      // .then((data) => setCount(updateLikes));
+      .then((data) => console.log("here", data));
   }
+
   return (
-    <div className="main-home">
+    <>
       <NavigationBar active="Home"></NavigationBar>
       <div className="main-cont">
-        {/* Carousel here: */}
         <CarouselContainer>
           {gallery.map((image, index) => {
-            return <img key={index} src={image.url} alt={image.alt} />;
+            console.log("image", image);
+            return (
+              <img
+                key={index}
+                src={image.url}
+                alt={image.alt}
+                style={{ float: "center" }}
+              />
+            );
           })}
         </CarouselContainer>
         <div className="about">
-          <p>
+          <p style={{ justifyContent: "center" }}>
             Our homemade pizza dough is produced in-house daily and is another
             reason why the pizza at Rose's Gourmet Pizza is simply the best! The
             Twisty bread, the signature Wingz and the delicious Double Meal are
@@ -40,106 +61,11 @@ function Home() {
         </div>
       </div>
       <div className="card-group">
-        <CardGroup>
-          <Card>
-            <CardImg variant="top" src={bbqSteak} alt="steak pizza" />
-            <Card.Title>
-              Barbeque Steak pizza
-              <span
-                style={{ padding: "5px", height: "5px" }}
-                onClick={() => setCount(count + 1)}
-              >
-                <FcLike />
-              </span>
-            </Card.Title>
-
-            <Card.Body
-              style={{
-                marginBottom: "10px",
-                height: "30px",
-                fontSize: "14px",
-                justifyItems: "center",
-              }}
-            >
-              <Card.Text>
-                {/* Marinated BBQ Steak */}
-                {count}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={boewors} alt="steak pizza" />
-            <Card.Title>
-              Boewors pizza
-              <span
-                style={{ padding: "5px", height: "5px" }}
-                onClick={() => setCount(count + 1)}
-              >
-                <FcLike />
-              </span>
-            </Card.Title>
-            <Card.Body
-              style={{
-                marginBottom: "10px",
-                height: "30px",
-                fontSize: "14px",
-                justifyItems: "center",
-              }}
-            >
-              <Card.Text>
-                {/* 100% Beef Mince */}
-                {count}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={chickenMush} alt="steak pizza" />
-            <Card.Title>
-              Chicken Mushroom pizza
-              <span
-                style={{ padding: "5px", height: "5px" }}
-                onClick={() => setCount(count + 1)}
-              >
-                <FcLike />
-              </span>
-            </Card.Title>
-            <Card.Body
-              style={{
-                marginBottom: "10px",
-                height: "30px",
-                fontSize: "14px",
-                justifyItems: "center",
-              }}
-            >
-              <Card.Text>
-                {/* Succulent Chicken - CreamyMushroom */}
-                {count}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={tikka} alt="steak pizza" />
-            <Card.Title>
-              Chicken-Tikka pizza
-              <span
-                style={{ padding: "5px", height: "5px" }}
-                onClick={() => handleClick()}
-              >
-                <FcLike />
-              </span>
-            </Card.Title>
-            <Card.Body
-              style={{
-                marginBottom: "10px",
-                height: "30px",
-                fontSize: "14px",
-                justifyItems: "center",
-              }}
-            >
-              <Card.Text>{count}</Card.Text>
-            </Card.Body>
-          </Card>
-        </CardGroup>
+        <RateCardCollection
+          faveItems={faveItems}
+          addLikes={handleAddLikes}
+          count={count}
+        />
       </div>
 
       <div className="about">
@@ -173,7 +99,7 @@ function Home() {
           </Link>
         </span>
       </div>
-    </div>
+    </>
   );
 }
 
