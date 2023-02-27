@@ -32,7 +32,6 @@
   overflow: hidden;
   object-fit: cover;
   height: auto;
-  /* transform: translateX(0); */
   transition: transform 1s ease;
   position: relative;
 }
@@ -113,10 +112,10 @@
   justify-content: center;
 }
 .card {
-  width: 18rem;
-  left: 200px;
+  width: 12rem;
+  left: 20px;
   margin: 20px;
-  height: 350px;
+  height: 300px;
   display: grid;
   align-items: center;
   justify-content: space-between;
